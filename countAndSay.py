@@ -26,5 +26,6 @@ class Solution:
             return "1"
         return self.getGroups(n-1, self.countAndSay(n-1))
 
+"Running the function"
 s = Solution()
 print("result", s.countAndSay(5))
