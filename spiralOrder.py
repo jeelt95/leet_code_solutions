@@ -5,7 +5,7 @@ class Solution:
     def getFirstRow(self, xi, yi, xe, ye, matrix):
         res = []
         for y in range(yi, ye+1):
-            if(matrix[xi][y]!=None):
+            if(matrix[xi][y] != None):
                 res.append(matrix[xi][y])
                 matrix[xi][y] = None
         xi += 1
@@ -14,7 +14,7 @@ class Solution:
     def getLastCol(self, xi, yi, xe, ye, matrix):
         res = []
         for x in range(xi, xe+1):
-            if(matrix[x][ye]!=None):
+            if(matrix[x][ye] != None):
                 res.append(matrix[x][ye])
                 matrix[x][ye] = None
         ye -= 1
@@ -23,7 +23,7 @@ class Solution:
     def getLastRow(self, xi, yi, xe, ye, matrix):
         res = []
         for y in range(ye, yi-1, -1):
-            if(matrix[xe][y]!=None):
+            if(matrix[xe][y] != None):
                 res.append(matrix[xe][y])
                 matrix[xe][y] = None
         xe -= 1
@@ -32,7 +32,7 @@ class Solution:
     def getFirstCol(self, xi, yi, xe, ye, matrix):
         res = []
         for x in range(xe, xi-1, -1):
-            if(matrix[x][yi]!=None):
+            if(matrix[x][yi] != None):
                 res.append(matrix[x][yi])
                 matrix[x][yi] = None
         yi += 1
